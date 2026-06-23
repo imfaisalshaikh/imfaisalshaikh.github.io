@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Faisal | FlutterFlow Developer</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Faisal</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="https://www.upwork.com/freelancers/faisalshaikh" class="hire-nav">Hire Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="content fade-in" style="padding-top: 120px;">
+    <h1>Contact Me</h1>
+    <p class="center-text" style="max-width: 700px; margin: 0 auto;">
+        Have an idea? Need an MVP? Want to build a FlutterFlow + Firebase app?  
+        Send me a message — I usually reply within 24 hours.
+    </p>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" class="form-status"></p>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Faisal — FlutterFlow Developer & MVP Builder</h3>
+
+        <div class="footer-social">
+            <a href="https://www.upwork.com/freelancers/faisalshaikh"><i class="fa-brands fa-upwork"></i></a>
+            <a href="https://github.com/imfaisalshaikh"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/faisalshaikh"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:faisalurrehmanshaikh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <p class="copyright">© 2026 Faisal. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Chatbot widget -->
+<div id="chatbot-toggle">
+    <i class="fa-solid fa-comments"></i>
+</div>
+
+<div id="chatbot-widget" class="hidden">
+    <div class="chatbot-header">
+        <span>AI Project Assistant</span>
+        <button id="chatbot-close">&times;</button>
+    </div>
+
+    <div class="chatbot-body" id="chatbot-messages">
+        <div class="bot-msg">
+            Hi! I'm Faisal's AI assistant.  
+            Ask me anything about his skills, projects, or tell me about your idea.
+        </div>
+    </div>
+
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input-field" placeholder="Type your question..." />
+        <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
